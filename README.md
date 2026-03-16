@@ -122,12 +122,16 @@ Contém consultas utilizadas para explorar o grafo e demonstrar seu uso em cená
 ---
 
 ## Resultados do Projeto
-Resultados do Projeto
 
-- 31 nós
-- 61 relacionamentos
-- 4 tipos de nós
-- 5 tipos de relacionamentos
+Após a execução dos scripts, o grafo foi estruturado com:
+
+- **31 nós**
+- **61 relacionamentos**
+- **4 tipos de nós**
+- **5 tipos de relacionamentos**
+
+### Resumo da estrutura carregada
+![Relationships Summary](images/relationships-summary.png)
 
 ---
 
@@ -189,7 +193,6 @@ Consulta que identifica quais usuários curtiram músicas de determinados artist
 Evidência da criação das constraints de unicidade utilizadas para garantir integridade dos identificadores principais no grafo.
 
 ![Constraints Created](images/constraints-created.png)
-
 ---
 
 ## Como Executar
