@@ -66,10 +66,10 @@ neo4j-music-recommendation-system/
 
 ## Organização das pastas
 
-- ```dataset/:``` arquivos CSV utilizados como base estrutural dos dados do projeto;
-- ```scripts/:``` scripts Cypher para criação de constraints, carga de nós, relacionamentos e consultas;
-- ```images/:``` prints do modelo, visualizações e resultados das consultas;
-- ```README.md:``` documentação principal do projeto.
+- `dataset/`: arquivos CSV utilizados como base estrutural dos dados do projeto;
+- `scripts/`: scripts Cypher para criação de constraints, carga de nós, relacionamentos e consultas;
+- `images/`: prints do modelo, visualizações e resultados das consultas;
+- `README.md`: documentação principal do projeto.
 
 ---
 
@@ -91,15 +91,16 @@ Os arquivos CSV foram mantidos no projeto como dataset de apoio e documentação
 ---
 
 ## Scripts do Projeto
-```01-constraints.cypher```
+
+### `01-constraints.cypher`
 Cria restrições de unicidade para os identificadores principais dos nós:
 
-- ```User.userId```
-- ```Song.songId```
-- ```Artist.artistId```
-- ```Genre.genreId```
+- `User.userId`
+- `Song.songId`
+- `Artist.artistId`
+- `Genre.genreId`
 
-```02-carga-nos.cypher```
+### `02-carga-nos.cypher`
 Responsável pela criação dos nós principais:
 
 - usuários;
@@ -107,7 +108,7 @@ Responsável pela criação dos nós principais:
 - artistas;
 - gêneros.
 
-```03-carga-relacionamentos.cypher```
+### `03-carga-relacionamentos.cypher`
 Cria os relacionamentos do grafo:
 
 - músicas ouvidas pelos usuários;
@@ -116,7 +117,7 @@ Cria os relacionamentos do grafo:
 - vínculo entre músicas e artistas;
 - vínculo entre músicas e gêneros.
 
-```04-consultas-negocio.cypher```
+### `04-consultas-negocio.cypher`
 Contém consultas utilizadas para explorar o grafo e demonstrar seu uso em cenários de recomendação musical.
 
 ---
@@ -132,10 +133,8 @@ Após a execução dos scripts, o grafo foi estruturado com:
 
 ### Resumo da estrutura carregada
 ![Relationships Summary](images/relationships-summary.png)
-
 ---
 
- Resumo da estrutura carregada
 ## Consultas de Negócio
 
 ### 1. Quais são as músicas mais ouvidas?
